@@ -1,6 +1,23 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+function lippes() {
+  const myself = 'Ty'
+  const wife = 'Devon'
+  console.log(`I am ${myself} and ${wife} is my wife!`)
+  children()
+    function children() {
+      const child = 'Shyla'
+      console.log(`${child} is my daughter`)
+      home()
+        function home() {
+          const state = 'Florida'
+          const city = 'Orlando'
+          console.log(`Together we live in ${city}, ${state}`)
+        }
+    }
+}
+lippes();
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
